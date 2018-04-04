@@ -660,6 +660,11 @@ strong, .bold {
 }
 .top_nav {
     display:inline-block;
+    float: right;
+    top: 50%;
+    position: absolute;
+    right: 0;
+    transform: translateY(-50%);
 }
 #primary_nav {
     margin: 0 auto;
