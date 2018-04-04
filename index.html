@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" data-vue-meta-server-rendered>
+	<head>
+		<title></title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Eastgate Square</title>
+		<link rel="shortcut icon" href="///codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/vnd.microsoft.icon/1516979866096/old_favicon.ico" type="image/x-icon" />
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="//preview-5a1891476e6f645140560000.codecloudapp.com/agile.css">
+		<link href="//cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+		<link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/v-calendar@0.5.2/lib/v-calendar.min.css'>
+		<link href="https://cdn.jsdelivr.net/npm/vue2-animate@1.0.4/dist/vue2-animate.min.css" rel="stylesheet">
+		<link href="//codecloud.cdn.speedyrails.net/sites/59282acb6e6f647d8d520100/text/css/1438916432000/ihover.css" rel="stylesheet">
+		<script src="https://use.fontawesome.com/9cb86d00ca.js"></script>
+		<link rel="stylesheet" href="/style.css">
+		<link rel="stylesheet" href="/v-calendar.css">
+	</head>
+	<body>
+	    {%raw-%} 
+    		<div id="app" v-cloak>
+    			<loader v-if="!dataLoaded"></loader>
+    			<header-component></header-component>
+    			<div class="main_content_container" v-if="dataLoaded">
+    				<transition name="custom-classes-transition" enter-active-class="fadeIn">
+    					<router-view class="router_content" :locale="locale"></router-view>
+    				</transition>
+    				<div class="home_subscription hidden_phone">
+                        <div class="subscribeBlog content_container">
+                             <h4 class="caps">{{$t("footer.stay_uptodate")}}</h4> 
+                             <div id="newsletterBlogForm">
+                                <label for="fieldEmail" style="display:none"></label>
+                                <input id="fieldEmail" name="cm-tkyhii-tkyhii" class="form-control" type="email" v-model="newsletter_email" :placeholder="$t('footer.enter_email')" required/> 
+                                <router-link class="contact_btn" data-i18n="general.submit" :to="'/newsletter?email='+ newsletter_email"><i class="fa fa-arrow-right"></i></router-link>
+                                
+                                <span id="success_subscribe" class="hidden_now">{{$t("footer.subscribe_thankyou")}}</span>
+                             </div>
+                        </div>
+                    </div>
+    				<div class="footer">
+    					<div class="site_container">
+    						<div class="site_logo visible_phone">
+    							<router-link to="/"><img src="/http://via.placeholder.com/500x150/fff" alt="Property Logo"/></router-link>
+    						</div>
+    						<div class="footer_nav hidden_phone">
+    						    <nav id="primary_nav">
+    								<ul>
+    								    <li v-for="item in menu_items" class="menu_item">
+    								        <router-link :to="item.href">{{$t(item.name)}}</router-link>
+    								    </li>
+    								</ul>
+    							</nav>
+    					    </div>
+    						<div class="footer_social">
+    							<a href="https://www.instagram.com/shopbdc_" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                                <a href="https://www.facebook.com/bonniedoonsc" target="_blank"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
+                                <a href="https://www.pinterest.ca/bonniedoonsc" target="_blank"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
+                                <a href="https://www.twitter.com/bonniedoonsc" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+    						</div>
+    						<div class="footer_terms">
+    							<p>&copy; {{copyright_year}}<span class="caps"> {{property.name}}</span> {{$t("footer.all_rights")}}<router-link to="/pages/bonniedoon-privacy-policy"> {{$t("footer.privacy_policy")}} </router-link> <span class="hidden_phone">|</span><br class="visible_phone"/><span> {{$t("footer.powered_by")}}<a href="//www.mallmaverick.com" target="_blank"> Mall Maverick</a></span></p>
+    							<!--<p>Powered by <a href="//www.mallmaverick.com" target="_blank">Mall Maverick</a></p>-->
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+    		</div>
+    		<div class='modal-backdrop custom_backdrop hidden_now' id="popup_backdrop"></div>
+    	{%endraw-%} 
+		<script src="https://unpkg.com/babel-polyfill@6.26.0/dist/polyfill.min.js"></script>
+		<script src="https://unpkg.com/es6-shim@0.35.3/es6-shim.min.js"></script>
+		<script data-main="/main" src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.5/require.min.js"></script>
+	</body>
+</html>
