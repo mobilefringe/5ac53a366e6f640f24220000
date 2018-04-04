@@ -115,6 +115,8 @@
                     'processedStores'
                 ]),
                 banners () {
+                    this.$store.state.banners.map(store => {
+                    
                     return _.orderBy(this.$store.state.banners, ['position'], ['asc']);
                 },
                 feature_items () {
