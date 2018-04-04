@@ -56,7 +56,7 @@
     							<div class="tel_num" v-if="property">
                                     <a :href="'tel:'+property.contact_phone">{{property.contact_phone}}</a>
                                 </div>
-                                <div>
+                                <div  v-if="property">
                                    <p style="display:block"> {{property.address1}}</p>
                                     <p style="display:block">{{property.city}}, {{property.postal_code}} {{property.province_state}}</p>
                                 </div>
