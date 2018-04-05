@@ -105,7 +105,7 @@
                 return {
                     dataLoaded: false,
                     show_mobile_menu: false,
-                    property_logo: "http://via.placeholder.com/1000x300",
+                    property_logo: "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1522943213725/mm_logo_2x.png",
                     menu_items: MenuItems
                 }
             },
