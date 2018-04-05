@@ -1045,7 +1045,7 @@ strong, .bold {
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
-            text-align: center;
+        text-align: center;
         .banner_title {
             color: #fff;
             text-transform : uppercase;
@@ -1070,6 +1070,9 @@ strong, .bold {
             color: #fff;
             margin: auto;
             padding: 5px;
+            &:hover {
+                text-decoration: none;
+            }
         }
     }
 }
