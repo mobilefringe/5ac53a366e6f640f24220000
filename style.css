@@ -1010,20 +1010,20 @@ strong, .bold {
     .columns{
         position: relative;
     }
-    .hero-text {
-        width: 100%;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        -webkit-transform: translate(-50%, -50%);
-        -ms-transform: translate(-50%, -50%);
-        font-family: 'Futura-Light';
-        font-size: 9.5vw;
-        color: $primary;
-        text-align: center;
-        text-transform: uppercase;
-    }
+    // .hero-text {
+    //     width: 100%;
+    //     position: absolute;
+    //     top: 50%;
+    //     left: 50%;
+    //     transform: translate(-50%, -50%);
+    //     -webkit-transform: translate(-50%, -50%);
+    //     -ms-transform: translate(-50%, -50%);
+    //     font-family: 'Futura-Light';
+    //     font-size: 9.5vw;
+    //     color: $primary;
+    //     text-align: center;
+    //     text-transform: uppercase;
+    // }
     .slick-slider { 
         width: 100%;
         position: relative;
