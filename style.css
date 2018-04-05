@@ -1041,36 +1041,36 @@ strong, .bold {
         animation: myMove 8s 1 ease-out;
     }
     .banner_text {
-            position: absolute;
-            // top: 50%;
-            top: 200px;
-            transform: translateY(-50%);
+        position: absolute;
+        // top: 50%;
+        top: 200px;
+        transform: translateY(-50%);
+        font-family: 'Open Sans';
+        .banner_title {
+            color: #000;
             font-family: 'Open Sans';
-            .banner_title {
-                color: #000;
-                font-family: 'Open Sans';
-                text-transform : uppercase;
+            text-transform : uppercase;
+            font-weight: 600;
+            font-size: 36px;
+            // width: 570px;
+            // text-shadow: 3px -3px #000;
+        }
+        .banner_btn {
+            p {
+                background: #000;
+                width: 150px;
+                height: 40px;
+                line-height: 30px;
+                text-align: center;
+                color: #fff;
+                margin: auto;
                 font-weight: 600;
-                font-size: 36px;
-                // width: 570px;
-                // text-shadow: 3px -3px #000;
-            }
-            .banner_btn {
-                p {
-                    background: #000;
-                    width: 150px;
-                    height: 40px;
-                    line-height: 30px;
-                    text-align: center;
-                    color: #fff;
-                    margin: auto;
-                    font-weight: 600;
-                    text-transform: uppercase;
-                    padding: 5px;
-                    // box-shadow: 1px 1px #000;
-                }
+                text-transform: uppercase;
+                padding: 5px;
+                // box-shadow: 1px 1px #000;
             }
         }
+    }
 }
 
 @keyframes myMove {
