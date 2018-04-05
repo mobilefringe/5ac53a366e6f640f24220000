@@ -1043,7 +1043,7 @@ strong, .bold {
     .banner_text {
         position: absolute;
         top: 50%;
-        top: 200px;
+        left:50%;
         transform: translateY(-50%);
         font-family: 'Open Sans';
         .banner_title {
