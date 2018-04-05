@@ -1050,6 +1050,7 @@ strong, .bold {
             text-transform : uppercase;
             font-size: 60px;
             line-height: normal;
+            position: relative;
             &:after {
                 content: " ";
                 height: 3px;
