@@ -128,7 +128,6 @@
                     }
                 }
             },
-            //transition_bg
             computed: {
                 ...Vuex.mapGetters([
                     'property',
