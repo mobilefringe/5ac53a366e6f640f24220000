@@ -1,0 +1,83 @@
+{
+  "header": {
+    "open_today": "Open Today",
+    "closed": "Closed Today",
+    "sign_up": "Sign Up",
+    "stores" : "Stores",
+    "centre_map" : "Centre Map",
+    "promos" : "Promotions",
+    "events" : "Events",
+    "guest_services" : "Guest Services",
+    "services" : "Services",
+    "community" : "Community Services",
+    "green_initiatives" : "Green Initiatives",
+    "gift_card" : "Gift Card",
+    "contact_us" : "Contact Us",
+    "hours": "Hours",
+    "jobs" : "Jobs",
+    "find_us" : "Find Us",
+    "newsletter" : "Newsletter"
+  },
+  "footer": {
+    "stay_uptodate" : "Stay up to date on all of our Happenings",
+    "enter_email" : "Enter Your Email",
+    "subscribe_thankyou" : "Thank you for subscribing to our newsletter.",
+    "all_rights" : "All Rights Reserved.",
+    "privacy_policy" : "Privacy Policy",
+    "powered_by" : "Powered by"
+  },
+  "home_page": {
+    "explore" : "Explore",
+    "our_feed" : "Our Feed"
+  },
+  "stores_page" : {
+    "shopping" : "shopping",
+    "map" : "Map",
+    "find_your_store": "Find Your Store",
+    "sort_by_cats" : "Sort By Categories",
+    "view_map": "View Map",
+    "new_store" : "New Store",
+    "coming_soon" : "Coming Soon",
+    "store_website": "Store Website",
+    "store_hours" : "Store Hours",
+    "store_dets_loc" : "Store Details & Location",
+    "about_us" : "About Us",
+    "find_store" : "Find Store",
+    "select_a_store" : "Select a Store"
+  },
+  "promos_page": {
+    "promotions" : "Promotions",
+    "read_more" : "Read More",
+    "no_promo_message" : "There are no Promotions at this time. Please check back soon.",
+    "back_to_promos" : "Back to Promotions"
+  },
+  "events_page": {
+    "events" : "Events",
+    "read_more" : "Read More",
+    "no_event_message" : "There are no Events at this time. Please check back soon.",
+    "back_to_events" : "Back to Events"
+  },
+  "jobs_page": {
+    "jobs" : "Jobs",
+    "read_more" : "Read More",
+    "no_job_message" : "There are no Jobs at this time. Please check back soon.",
+    "back_to_jobs" : "Back to Jobs"
+  },
+  "hours_page" : {
+    "hours" : "Hours",
+    "reg_hours" : "Regular Shopping Hours",
+    "extended_holiday_hours" : "Extended Holiday Hours",
+    "holiday_closures" : "Holiday Closures"
+  },
+  "newsletter_page" : {
+    "newsletter" : "Newsletter",
+    "name" : "Name",
+    "email" : "Email",
+    "agree" : "Yes, I would like to receive ongoing news related to events, promotions and special announcements from",
+    "subscribe" : "Subscribe",
+    "success" : "Success", 
+    "error": "Error",
+    "thank_you_message" : "Thank you for subcribing to our newsletter. You'll hear from us soon!",
+    "error_message" : "There was an error when trying to submit your request. Please try again later."
+  }
+}
