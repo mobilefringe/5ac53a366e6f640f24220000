@@ -1056,7 +1056,6 @@ strong, .bold {
                 text-align: center;
                 color: #fff;
                 margin: auto;
-                
                 padding: 5px;
             }
         }
@@ -1125,28 +1124,28 @@ strong, .bold {
 .banner_img {
     position: relative;
 }
-.banner_title {
-    position: absolute;
-    left: 50%;
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-    // top: 50%;
-    bottom: 50%;
-    hr {
-        margin: 0 auto;
-        width: 50%;
-        border-top: 3px solid #fff;
-    }
-    h1 { 
-        padding: 30px 0;
-        // font-family: "LeagueGothic-Regular";
-        font-size: 9rem;
-        color: #FFF;
-        &:hover {
-            color: #FFF;
-        }
-    }
-}
+// .banner_title {
+//     position: absolute;
+//     left: 50%;
+//     -webkit-transform: translateX(-50%);
+//     transform: translateX(-50%);
+//     // top: 50%;
+//     bottom: 50%;
+//     hr {
+//         margin: 0 auto;
+//         width: 50%;
+//         border-top: 3px solid #fff;
+//     }
+//     h1 { 
+//         padding: 30px 0;
+//         // font-family: "LeagueGothic-Regular";
+//         font-size: 9rem;
+//         color: #FFF;
+//         &:hover {
+//             color: #FFF;
+//         }
+//     }
+// }
 .home_page_title {
     margin: 0;
     padding: 50px 0px;
