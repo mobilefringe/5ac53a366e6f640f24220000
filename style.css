@@ -2998,9 +2998,9 @@ gallery:after{
     
 }
 @media (max-width: 1300px) {
-    #primary_nav ul .menu_item {
-        min-width: 130px;
-    }
+    // #primary_nav ul .menu_item {
+    //     min-width: 130px;
+    // }
     .nav_container.sticky .site_logo {
         margin: 0 auto 0 1%;
     }
