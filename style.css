@@ -1053,9 +1053,7 @@ strong, .bold {
         }
         .banner_btn {
             p {
-                width: 150px;
-                height: 40px;
-                line-height: 30px;
+                
                 text-align: center;
                 color: #fff;
                 margin: auto;
