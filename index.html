@@ -45,7 +45,9 @@
     							<router-link to="/"><img :src="property_logo" alt="Property Logo"/></router-link>
     						</div>
     						<div>
-    						    
+    						    <div class="tel_num" v-if="property">
+                                    <a :href="'tel:'+property.contact_phone">{{property.contact_phone}}</a>
+                                </div>
     						</div>
     						<div class="footer_social">
     							<a href="https://www.instagram.com/shopbdc_" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i></a>
