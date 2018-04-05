@@ -1052,9 +1052,9 @@ strong, .bold {
             line-height: normal;
             &:after {
                 content: " ";
-                height: 5px;
-                width: 60px;
-                background: $accent;
+                height: 3px;
+                width: 200px;
+                background: #fff;
                 position: absolute;
                 left: 50%;
                 bottom: 35px;
