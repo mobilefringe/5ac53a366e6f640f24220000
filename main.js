@@ -84,6 +84,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 newsletter_email: "",
                 stickyMenu: false,
                 isSticky: 700,
+                property_logo : "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1522945080899/mmlogo500.png"
             }
         },
         created() {
