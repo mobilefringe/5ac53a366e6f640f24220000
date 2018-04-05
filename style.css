@@ -1048,8 +1048,8 @@ strong, .bold {
         .banner_title {
             color: #fff;
             text-transform : uppercase;
-            font-weight: 600;
-            font-size: 36px;
+            font-size: 60px;
+            line-height: normal;
             &:after {
                 content: " ";
                 height: 5px;
