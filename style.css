@@ -1050,6 +1050,18 @@ strong, .bold {
             text-transform : uppercase;
             font-weight: 600;
             font-size: 36px;
+            &:after {
+                content: " ";
+                height: 5px;
+                width: 60px;
+                background: $accent;
+                position: absolute;
+                left: 50%;
+                bottom: 35px;
+                -webkit-transform: translate(-50%, 0%);
+                -ms-transform: translate(-50%, 0%);
+                transform: translate(-50%, 0%);
+            }
         }
         .banner_btn {
             p {
