@@ -1044,7 +1044,7 @@ strong, .bold {
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%);
+        transform: translate(-50%, -50%);
         font-family: 'Open Sans';
         .banner_title {
             color: #000;
