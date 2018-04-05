@@ -3007,9 +3007,9 @@ gallery:after{
     .nav_container.sticky #primary_nav {
         margin: 0 1% 0 auto;
     }
-    #primary_nav ul .menu_item ul .dropdown_item {
-        width: 130px;
-    }
+    // #primary_nav ul .menu_item ul .dropdown_item {
+    //     width: 130px;
+    // }
 }
 
 @media (max-width: 1200px) {
