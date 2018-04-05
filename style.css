@@ -1065,12 +1065,10 @@ strong, .bold {
             }
         }
         .banner_btn {
-            p {
-                text-align: center;
-                color: #fff;
-                margin: auto;
-                padding: 5px;
-            }
+            text-align: center;
+            color: #fff;
+            margin: auto;
+            padding: 5px;
         }
     }
 }
@@ -1765,6 +1763,7 @@ strong, .bold {
   -webkit-animation-iteration-count: 1;
   animation-iteration-count: 1;
 }
+
 /* STORE DIRECTORY */
 .store_search {
     position: relative;
