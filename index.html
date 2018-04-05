@@ -21,7 +21,7 @@
 	    {%raw-%} 
     		<div id="app" v-cloak>
     			<loader v-if="!dataLoaded"></loader>
-    			<header-component></header-component>
+    			<header-component :class="{sticky : stickyMenu}"></header-component>
     			<div class="main_content_container" v-if="dataLoaded">
     				<transition name="custom-classes-transition" enter-active-class="fadeIn">
     					<router-view class="router_content" :locale="locale"></router-view>
