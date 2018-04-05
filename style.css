@@ -1070,7 +1070,7 @@ strong, .bold {
             color: #fff;
             margin: auto;
             padding: 5px;
-            &:hover {
+            &:hover, &:focus, &:active {
                 text-decoration: none;
             }
         }
