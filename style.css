@@ -1058,7 +1058,7 @@ strong, .bold {
                 background: #fff;
                 position: absolute;
                 left: 50%;
-                bottom: 35px;
+                bottom: 0;
                 -webkit-transform: translate(-50%, 0%);
                 -ms-transform: translate(-50%, 0%);
                 transform: translate(-50%, 0%);
