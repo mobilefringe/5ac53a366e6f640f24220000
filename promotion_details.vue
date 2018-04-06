@@ -39,11 +39,12 @@
 					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentPromo.name_2}}</h3>
 					<div class="row">
 					    <p class="promo_store_name caps" v-if="locale=='en-ca'">{{currentPromo.store.name}}</p>
-					 </div><div class="row">
+					 </div>
+					 <div class="row">
 	        		    <p class="promo_store_name caps" v-else>{{currentPromo.store.name_2}}</p>
 						<p class="promo_div_date pull-left">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
 						<social-sharing :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="_.truncate(currentPromo.description, {'length': 99})" twitter-user="EastgateSquare" :media="currentPromo.image_url" inline-template >
-							<div class="blog-social-share pull-right" style="margin: 15px auto;">
+							<div class="blog-social-share pull-right">
 								<div class="social_share">
 									<network network="facebook">
 										<i class="fa fa-facebook social_icons" aria-hidden="true"></i>
