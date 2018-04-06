@@ -74,7 +74,6 @@
                         this.pageBanner = {};
                         this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1523030074878/jobs_inside_banner.png"
                     }
-                    console.log(this.jobBanner);
                     this.jobs = this.job;
                 });
             },
