@@ -95,9 +95,9 @@
     				    <transition name="custom-classes-transition" enter-active-class="animated slideInRight" leave-active-class="animated slideOutRight">
     						<nav id="mobile_nav" v-show="show_mobile_menu">
     							<ul>
-    								<div class="mobile_menu_site_logo">
-    									<router-link to="/"><img :src="property_logo" alt="Property Logo"/></router-link>
-    								</div>
+    								<!--<div class="mobile_menu_site_logo">-->
+    								<!--	<router-link to="/"><img :src="property_logo" alt="Property Logo"/></router-link>-->
+    								<!--</div>-->
     								<li v-for="(item,key) in menu_items" class="menu_item">
     							        <router-link :to="item.href" v-if="item.sub_menu == undefined">{{$t(item.name)}}</router-link>
     							        <div v-else>
