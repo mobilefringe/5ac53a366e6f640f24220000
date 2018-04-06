@@ -107,8 +107,6 @@
             methods: {
                 validateBeforeSubmit() {
                     this.$validator.validateAll().then((result) => {
-                    if (result && (this.correctValNum === this.validaNum)) {
-                        this.validNumError = false;
                         let errors = this.errors;
                         send_data = {};
                         send_data.form_data = JSON.stringify(Utility.serializeObject(this.form_data));
@@ -130,8 +128,6 @@
                                 this.formError = true;
                             }
                         })
-                        }
-                    
                     })
                 },
                 loadData: async function() {
