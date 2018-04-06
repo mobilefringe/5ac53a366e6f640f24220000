@@ -28,11 +28,6 @@
     							
     							<p class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
     						
-    							<!--<div class="text-right  col-sm-6" v-if="promo" style="padding:0">-->
-    								
-    								   
-    							    
-    							<!--</div>-->
     						</div>
 						</router-link>
 					</div>
