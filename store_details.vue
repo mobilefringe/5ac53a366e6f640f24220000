@@ -4,7 +4,7 @@
 			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content">
-					<h1>{{$t("stores_page.shopping")}}</h1>
+					<h1>{{$t("stores_page.store_directory")}}</h1>
 				</div>
 			</div>
 		</div>
