@@ -5,8 +5,8 @@
 			<div class="site_container">
 				<div class="header_content">
 					<!--<h1>{{$t("stores_page.store_directory")}}</h1>-->
-                    <h4 class="event_store_name caps" v-if="locale=='en-ca'">{{currentStore.name}}</h4>
-					<h4 class="event_store_name caps" v-else>{{currentStore.name_2}}</h4>
+                    <h1 class="event_store_name caps" v-if="locale=='en-ca'">{{currentStore.name}}</h1>
+					<h1 class="event_store_name caps" v-else>{{currentStore.name_2}}</h1>
 				</div>
 			</div>
 		</div>
