@@ -18,7 +18,6 @@
 					    <p class="promo_store_name caps" v-else>{{currentJob.store.name_2}}</p>
 					 </div>
 					 <div class="row">
-	        		    
 						<p class="promo_div_date pull-left">{{currentJob.start_date | moment("MMM D", timezone)}} - {{currentJob.end_date | moment("MMM D", timezone)}}</p>
 						<social-sharing :url="shareURL(currentJob.slug)" :title="currentJob.title" :description="currentJob.body" :quote="_.truncate(currentJob.description, {'length': 99})" twitter-user="EastgateSquare" :media="currentJob.image_url" inline-template >
 							<div class="blog-social-share pull-right">
