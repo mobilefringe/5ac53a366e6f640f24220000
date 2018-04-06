@@ -4,7 +4,9 @@
 			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content">
-					<h1>{{$t("stores_page.store_directory")}}</h1>
+					<!--<h1>{{$t("stores_page.store_directory")}}</h1>-->
+                    <h4 class="event_store_name caps" v-if="locale=='en-ca'">{{currentStore.name}}</h4>
+					<h4 class="event_store_name caps" v-else>{{currentStore.name_2}}</h4>
 				</div>
 			</div>
 		</div>
