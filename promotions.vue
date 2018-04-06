@@ -13,30 +13,30 @@
 				<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="4">
 					<div class="row event_container" v-for="(promo,index) in paginated('promos')" :class="{ 'last': index === (paginated('promos').length - 1) }"  :key="promo.id">
 					    <router-link :to="'/promotions/'+ promo.slug" class="event_learn_more pull-left">
-						<div class="col-sm-6 col-md-4 event_image_container">
-							<router-link :to="'/promotions/'+ promo.slug" class="event_learn_more">
-								<img v-lazy="promo.store.image_url"  class="event_image image" alt=""/>
-							</router-link>
-						</div>
-						<div class="col-sm-6 col-md-8 event_dets_container">
-							<h4 class="event_name caps" v-if="locale=='en-ca'">{{promo.name}}</h4>
-							<h4 class="event_name caps" v-else>{{promo.name_2}}</h4>
-							<div v-if="promo.promotionable_type == 'Store'">
-							    <h4 class="event_store_name caps" v-if="locale=='en-ca'">{{promo.store.name}}</h4>
-							    <h4 class="event_store_name caps" v-else>{{promo.store.name_2}}</h4>
-							</div>
-							
-							<div class="event_thick_line"></div>
-							<p class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
-							<p class="event_desc"  v-if="locale=='en-ca'" >{{promo.description_short}}</p>
-							<p class="event_desc" v-else>{{promo.description_short_2}}</p>
-						
-							<!--<div class="text-right  col-sm-6" v-if="promo" style="padding:0">-->
-								
-								   
-							    
-							<!--</div>-->
-						</div>
+    						<div class="col-sm-6 col-md-4 event_image_container">
+    							<router-link :to="'/promotions/'+ promo.slug" class="event_learn_more">
+    								<img v-lazy="promo.store.image_url"  class="event_image image" alt=""/>
+    							</router-link>
+    						</div>
+    						<div class="col-sm-6 col-md-8 event_dets_container">
+    							<h4 class="event_name caps" v-if="locale=='en-ca'">{{promo.name}}</h4>
+    							<h4 class="event_name caps" v-else>{{promo.name_2}}</h4>
+    							<div v-if="promo.promotionable_type == 'Store'">
+    							    <h4 class="event_store_name caps" v-if="locale=='en-ca'">{{promo.store.name}}</h4>
+    							    <h4 class="event_store_name caps" v-else>{{promo.store.name_2}}</h4>
+    							</div>
+    							
+    							<div class="event_thick_line"></div>
+    							<p class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
+    							<p class="event_desc"  v-if="locale=='en-ca'" >{{promo.description_short}}</p>
+    							<p class="event_desc" v-else>{{promo.description_short_2}}</p>
+    						
+    							<!--<div class="text-right  col-sm-6" v-if="promo" style="padding:0">-->
+    								
+    								   
+    							    
+    							<!--</div>-->
+    						</div>
 						</router-link>
 						<div class="col-sm-12">
 							<hr>
@@ -111,12 +111,12 @@
                             value.description_short_2 = _.truncate(value.description_2, {
                                 'length': 150
                             });
-                            if (value.store != null && value.store != undefined && _.includes(value.store.image_url, 'missing')) {
-                                value.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1518554684072/bonniedoonlogo.png";
+                            if (value.store != null && value.store != undefined && _.includes(value.store.store_front_url_abs, 'missing')) {
+                                value.store.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1518554684072/bonniedoonlogo.png";
                             }
                             else if (value.store == null || value.store == undefined) {
                                 value.store = {};
-                                value.store.image_url =  "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1518554684072/bonniedoonlogo.png";
+                                value.store.store_front_url_abs =  "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1518554684072/bonniedoonlogo.png";
                             }
                             if (_.includes(value.image_url, 'missing')) {
                                 value.image_url = "http://via.placeholder.com/400x400/757575";
