@@ -26,6 +26,15 @@
     },
     {
         "name": "header.contact_us",
-        "href": "/contact_us"
+        "href": "/contact_us",
+        "sub_menu": [{
+                "name": "header.contact_us",
+                "href": "/contact_us"
+            },
+            {
+                "name": "header.centre_map",
+                "href": "/map"
+            }
+        ]
     }
 ]
