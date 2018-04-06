@@ -9,36 +9,18 @@
 		</div>
 		<div class="site_container">
 			<div class="row">
-				<div class="col-sm-4 promo_logo_container hidden_phone">
-					<div class="image_container">
-						<img v-lazy="currentJob.store.store_front_url_abs" class="image"/>
-					</div>
-					<div class="text-center" v-if="currentJob.store.name">
-					    <div v-if="currentJob.jobable_type == 'Store'">
-						    <h4 class="event_store_name caps" v-if="locale=='en-ca'">{{currentJob.store.name}}</h4>
-						    <h4 class="event_store_name caps" v-else>{{currentJob.store.name_2}}</h4>
-						</div>
-						<h4 v-if="currentJob.store.phone" class="store_dets_title"> {{currentJob.store.phone}}</h4>
-						<h4 v-if="currentJob.store.website" class="store_dets_title"> <a :href="'//'+currentJob.store.website" target="_blank">{{$t("stores_page.store_website")}}</a></h4>
-						<h4 v-if="storeHours.length >0 " class="store_dets_title">{{$t("stores_page.store_hours")}}</h4>
-						<ul class="store_hours_list">
-							<li v-if="storeHours" v-for="hour in storeHours">
-								{{hour.day_of_week | moment("dddd", timezone)}} - {{hour.open_time | moment("h A", timezone)}} - {{hour.close_time | moment("h A", timezone)}}
-							</li>
-						</ul>
-						<div class="store_dets_btn caps" v-if="currentJob.jobable_type == 'Store'">
-							<router-link :to="'/stores/'+currentJob.store.slug"> {{$t("stores_page.store_dets_loc")}}</router-link>
-						</div>
-					</div>
-				</div>
-				<div class="col-sm-8 promo_image_container text-left promo_dets_desc">
-					<router-link to="/jobs"><i class="fa fa-angle-left"></i> &nbsp; {{$t("jobs_page.back_to_jobs")}}</router-link>
-					<h3 class="promo_name" style="margin: 20px auto 0px;" v-if="locale=='en-ca'">{{currentJob.name}}</h3>
-					<h3 class="promo_name" style="margin: 20px auto 0px;" v-else>{{currentJob.name_2}}</h3>
+				<div class="col-sm-12 promo_image_container text-left">
+					<router-link to="/promotions"><i class="fa fa-angle-left"></i> &nbsp;{{$t("promos_page.back_to_promos")}}</router-link>
+					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-if="locale=='en-ca'">{{currentPromo.name}}</h3>
+					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentPromo.name_2}}</h3>
 					<div class="row">
-						<p class="promo_div_date pull-left">{{currentJob.start_date | moment("MMM D", timezone)}} - {{currentJob.end_date | moment("MMM D", timezone)}}</p>
-						<social-sharing :url="shareURL(currentJob.slug)" :title="currentJob.title" :description="currentJob.body" :quote="_.truncate(currentJob.description, {'length': 99})" twitter-user="EastgateSquare" :media="currentJob.image_url" inline-template >
-							<div class="blog-social-share pull-right" style="margin: 15px auto;">
+					    <p class="promo_store_name caps" v-if="locale=='en-ca'">{{currentPromo.store.name}}</p>
+					 </div>
+					 <div class="row">
+	        		    <p class="promo_store_name caps" v-else>{{currentPromo.store.name_2}}</p>
+						<p class="promo_div_date pull-left">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
+						<social-sharing :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="_.truncate(currentPromo.description, {'length': 99})" twitter-user="EastgateSquare" :media="currentPromo.image_url" inline-template >
+							<div class="blog-social-share pull-right">
 								<div class="social_share">
 									<network network="facebook">
 										<i class="fa fa-facebook social_icons" aria-hidden="true"></i>
