@@ -19,12 +19,13 @@
     							</router-link>
     						</div>
     						<div class="col-sm-12 event_dets_container">
-    							<h4 class="event_name caps" v-if="locale=='en-ca'">{{promo.name}}</h4>
-    							<h4 class="event_name caps" v-else>{{promo.name_2}}</h4>
-    							<div v-if="promo.promotionable_type == 'Store'">
+    						    <div v-if="promo.promotionable_type == 'Store'">
     							    <h4 class="event_store_name caps" v-if="locale=='en-ca'">{{promo.store.name}}</h4>
     							    <h4 class="event_store_name caps" v-else>{{promo.store.name_2}}</h4>
     							</div>
+    							<h4 class="event_name caps" v-if="locale=='en-ca'">{{promo.name}}</h4>
+    							<h4 class="event_name caps" v-else>{{promo.name_2}}</h4>
+    							
     							
     							<div class="event_thick_line"></div>
     							<p class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
