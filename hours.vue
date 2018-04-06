@@ -24,7 +24,7 @@
                     <div class="col-sm-12 ">
                         <div class="padding_top_20"></div>
                         
-                        <h3 class="hours_heading text-left">{{$t("hours_page.extended_holiday_hours")}}</h3>
+                        <h3 class="hours_heading text-left">{{$t("hours_page.holiday_hours")}}</h3>
                         <div id="holidays_hours_container" class="hours_container">
                             <div class="hours_div text-left"  v-for="hour in reducedHolidays">
                                 <span>
