@@ -16,7 +16,7 @@
                     <div class="text-left" v-html="currentPage.body"></div>
                 </div> 
                 <div class="col-sm-6 contact_contents">
-                    <div class="description_text text_centre caps">
+                    <div class="description_text text-center caps">
                         CONTACT US FOR QUESTIONS, COMMENTS AND MORE INFORMATION.
                     </div>
                     <form class="form-horizontal padding_top_20" action="form-submit" @submit.prevent="validateBeforeSubmit">
