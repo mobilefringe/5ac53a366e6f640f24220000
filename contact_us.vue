@@ -74,9 +74,6 @@
                     form_data : {},
                     formSuccess : false,
                     formError: false,
-                    validaNum: '',
-                    correctValNum: null,
-                    validNumError: false,
                     currentPage : null,
                     pageBanner: null
                 }
