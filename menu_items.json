@@ -32,8 +32,8 @@
                 "href": "/contact_us"
             },
             {
-                "name": "header.centre_map",
-                "href": "/map"
+                "name": "header.hours",
+                "href": "/hours"
             }
         ]
     }
