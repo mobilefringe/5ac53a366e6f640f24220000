@@ -56,7 +56,7 @@
 							</div>
 						</social-sharing>
 					</div>
-					<div class="col-sm-12 no_padding">
+					<div class="col-sm-12 no_padding promotion_dets_desc">
 						<img v-if="!_.includes(currentPromo.image_url, 'missing')" v-lazy="currentPromo.image_url" class="image"/>
 						<div class="text-left promo_description">
 							<p v-if="locale=='en-ca'" v-html="currentPromo.rich_description"></p>
