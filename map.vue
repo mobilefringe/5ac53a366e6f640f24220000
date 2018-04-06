@@ -71,7 +71,6 @@
                         this.pageBanner = {};
                         this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1523030051721/promos_inside_banner.png"
                     }
-                    console.log(temp_repo, this.pageBanner); 
                     this.$on('updateMap', this.updatePNGMap);
                 });
             },
