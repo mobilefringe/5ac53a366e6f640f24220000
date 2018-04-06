@@ -26,8 +26,6 @@
     							<h4 class="event_name caps" v-if="locale=='en-ca'">{{promo.name}}</h4>
     							<h4 class="event_name caps" v-else>{{promo.name_2}}</h4>
     							
-    							
-    							<div class="event_thick_line"></div>
     							<p class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
     						
     							<!--<div class="text-right  col-sm-6" v-if="promo" style="padding:0">-->
