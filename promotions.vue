@@ -37,9 +37,6 @@
     							<!--</div>-->
     						</div>
 						</router-link>
-						<div class="col-sm-12">
-							<hr>
-						</div>
 					</div>
 				</paginate>
 			</div>
