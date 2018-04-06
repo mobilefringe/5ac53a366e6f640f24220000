@@ -18,7 +18,7 @@
     								<img v-lazy="promo.store.store_front_url_abs"  class="event_image image" alt=""/>
     							</router-link>
     						</div>
-    						<div class="row event_dets_container">
+    						<div class="col-sm-12 event_dets_container">
     							<h4 class="event_name caps" v-if="locale=='en-ca'">{{promo.name}}</h4>
     							<h4 class="event_name caps" v-else>{{promo.name_2}}</h4>
     							<div v-if="promo.promotionable_type == 'Store'">
