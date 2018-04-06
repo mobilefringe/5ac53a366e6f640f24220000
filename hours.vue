@@ -19,8 +19,7 @@
                             </div>
                         </div>
                         
-                        <p>*Some stores, restaurants and entertainment venues hours will vary.
-</p>
+                        <p>*Some stores, restaurants and entertainment venues hours will vary.</p>
                     </div>
                 </div>
                 <div class="row">
@@ -41,7 +40,7 @@
                         
                         <div class="padding_top_20"></div>
                         
-                        <h3 class="hours_heading text-left caps">{{$t("hours_page.holiday_closures")}}</h3>
+                        <h3 class="hours_heading text-left caps" v-if="closeHolidays.length < 0">{{$t("hours_page.holiday_closures")}}</h3>
                         <div id="closed_hours_container" class="hours_container">
                             <div class="hours_div text-left" v-for="hour in closeHolidays">
                                 <span>
