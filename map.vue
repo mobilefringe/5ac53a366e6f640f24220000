@@ -55,7 +55,7 @@
                     dataloaded: false,
                     mobile_store: false,
                     windowWidth: 0,
-                    pageBanner : null,
+                    storeBanner : null,
                     search_result : null,
                 }
             },
