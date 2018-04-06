@@ -16,7 +16,7 @@
     	<!--				    <social-links></social-links>-->
     	<!--				</div>-->
     	<!--				<router-link id="signup" to="/newsletter">{{$t("header.sign_up")}}</router-link>-->
-    					<!--<span> <span @click="changeLocale('en-ca')"> en</span> | <span @click="changeLocale('fr-ca')">fr</span></span>-->
+    	<!--				<span> <span @click="changeLocale('en-ca')"> en</span> | <span @click="changeLocale('fr-ca')">fr</span></span>-->
     	<!--			</div>-->
     	<!--			<div id="menu-icon" @click="show_mobile_menu = !show_mobile_menu" :class="{ open: show_mobile_menu}">-->
     	<!--				<span></span>-->
@@ -70,7 +70,7 @@
     	<!--		</div>-->
     	<!--	</div>-->
     	<!--</div>-->
-    	<div class="menu_bar hidden_phone">
+    	<div class="menu_bar">
     		<div class="site_container">
     			<div class="nav_container hidden_phone">
     				<div class="site_logo">
