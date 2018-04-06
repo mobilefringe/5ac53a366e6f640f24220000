@@ -10,16 +10,16 @@
 		<div class="site_container">
 			<div class="row">
 				<div class="col-sm-12 promo_image_container text-left">
-					<router-link to="/jobs"><i class="fa fa-angle-left"></i> &nbsp;{{$t("jobs_page.back_to_jobss")}}</router-link>
-					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-if="locale=='en-ca'">{{currentPromo.name}}</h3>
-					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentPromo.name_2}}</h3>
+					<router-link to="/jobs"><i class="fa fa-angle-left"></i> &nbsp;{{$t("jobs_page.back_to_jobs")}}</router-link>
+					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-if="locale=='en-ca'">{{currentJob.name}}</h3>
+					<h3 class="promo_name" style="margin: 20px auto 0px;"  v-else>{{currentJob.name_2}}</h3>
 					<div class="row">
-					    <p class="promo_store_name caps" v-if="locale=='en-ca'">{{currentPromo.store.name}}</p>
+					    <p class="promo_store_name caps" v-if="locale=='en-ca'">{{currentJob.store.name}}</p>
 					 </div>
 					 <div class="row">
-	        		    <p class="promo_store_name caps" v-else>{{currentPromo.store.name_2}}</p>
-						<p class="promo_div_date pull-left">{{currentPromo.start_date | moment("MMM D", timezone)}} - {{currentPromo.end_date | moment("MMM D", timezone)}}</p>
-						<social-sharing :url="shareURL(currentPromo.slug)" :title="currentPromo.title" :description="currentPromo.body" :quote="_.truncate(currentPromo.description, {'length': 99})" twitter-user="EastgateSquare" :media="currentPromo.image_url" inline-template >
+	        		    <p class="promo_store_name caps" v-else>{{currentJob.store.name_2}}</p>
+						<p class="promo_div_date pull-left">{{currentJob.start_date | moment("MMM D", timezone)}} - {{currentJob.end_date | moment("MMM D", timezone)}}</p>
+						<social-sharing :url="shareURL(currentJob.slug)" :title="currentJob.title" :description="currentJob.body" :quote="_.truncate(currentJob.description, {'length': 99})" twitter-user="EastgateSquare" :media="currentJob.image_url" inline-template >
 							<div class="blog-social-share pull-right">
 								<div class="social_share">
 									<network network="facebook">
