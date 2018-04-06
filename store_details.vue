@@ -21,7 +21,7 @@
 					</div>
 				</div>
 			</div>
-			<hr class="green_hr">
+			<!--<hr class="green_hr">-->
 			<div class="row margin_30">
 				<div class="col-sm-4">
 					<div class="text-center">
