@@ -90,8 +90,6 @@
                 });
             },
             mounted () {
-                //creating random validation num 
-                this.correctValNum = Utility.rannumber();//this.rannumber;
                 //ensuring the variables are created in this order for email
                 this.form_data.name = null;
                 this.form_data.email = null;
