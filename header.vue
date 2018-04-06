@@ -18,12 +18,7 @@
     	<!--				<router-link id="signup" to="/newsletter">{{$t("header.sign_up")}}</router-link>-->
     	<!--				<span> <span @click="changeLocale('en-ca')"> en</span> | <span @click="changeLocale('fr-ca')">fr</span></span>-->
     	<!--			</div>-->
-    	<!--			<div id="menu-icon" @click="show_mobile_menu = !show_mobile_menu" :class="{ open: show_mobile_menu}">-->
-    	<!--				<span></span>-->
-    	<!--				<span></span>-->
-    	<!--				<span></span>-->
-    	<!--				<span></span>-->
-    	<!--			</div>-->
+    
     				<div class="mobile_nav_container visible_phone">
     				    <transition name="custom-classes-transition" enter-active-class="animated slideInRight" leave-active-class="animated slideOutRight">
     						<nav id="mobile_nav" v-show="show_mobile_menu">
