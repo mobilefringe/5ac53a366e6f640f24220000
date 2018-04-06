@@ -41,7 +41,7 @@
                         <div class="padding_top_20"></div>
                         
                         <h3 class="hours_heading text-left caps" v-if="closeHolidays.length > 0">{{$t("hours_page.holiday_closures")}}</h3>
-                        <div id="closed_hours_container" class="hours_container">
+                        <div id="closed_hours_container" class="hours_container"  v-if="closeHolidays.length > 0">
                             <div class="hours_div text-left" v-for="hour in closeHolidays">
                                 <span>
                                     <span v-if="locale=='en-ca'">{{hour.holiday_name}}</span>
