@@ -9,7 +9,7 @@
 		</div>  
         <div class="margin_25_across padding_top_40 site_container">
             <div class="row"> 
-                <div class="col-sm-6 text-left" v-if="currentPage">
+                <div class="col-sm-6 text-left border_right" v-if="currentPage">
             		<!--<div class="property_address">-->
             		<!--     {{property.address1}} <br/> {{property.city}} <br/> {{property.province}} {{property.postal_code}} -->
             		<!--</div>-->
