@@ -76,7 +76,7 @@
                     currentPromo: null,
                     storePromos : null,
                     storeHours : null,
-                    promoBanner : null
+                    pageBanner : null
                 }
             },
             beforeRouteUpdate(to, from, next) {
@@ -91,7 +91,9 @@
                     this.updateCurrentPromo(this.id);
                     var temp_repo = this.findRepoByName('Promos Banner');
                     if(temp_repo) {
-                        this.promoBanner = temp_repo.images[0];
+                        // this.pageBanner = temp_repo.images[0];
+                        this.pageBanner = {};
+                        this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1523030051721/promos_inside_banner.png"
                     }
                     console.log(this.promoBanner);
                     this.promos = this.promotions;
