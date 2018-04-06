@@ -1,6 +1,6 @@
 <template>
 	<div class="promo_dets_container" v-if="currentPromo">
-		<div class="page_header" v-if="promoBanner" v-bind:style="{ backgroundImage: 'url(' + promoBanner.image_url + ')' }">
+		<div class="page_header" v-if="pageBanner" v-bind:style="{ backgroundImage: 'url(' + pageBanner.image_url + ')' }">
 			<!--http://via.placeholder.com/1920x300-->
 			<div class="site_container">
 				<div class="header_content caps">
@@ -95,7 +95,6 @@
                         this.pageBanner = {};
                         this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1523030051721/promos_inside_banner.png"
                     }
-                    console.log(this.promoBanner);
                     this.promos = this.promotions;
                 });
             },
