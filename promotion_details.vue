@@ -9,7 +9,7 @@
 			</div>
 		</div>
 		<div class="site_container">
-			<div class="row promo_dets_container">
+			<div class="row" id="promo_dets_container">
 				<!--<div class="col-sm-4 promo_logo_container hidden_phone">-->
 				<!--	<div class="image_container">-->
 				<!--		<img v-lazy="currentPromo.store.store_front_url_abs" class="image"/>-->
