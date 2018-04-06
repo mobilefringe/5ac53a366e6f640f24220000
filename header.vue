@@ -72,7 +72,7 @@
     	<!--</div>-->
     	<div class="menu_bar">
     		<div class="site_container">
-    			<div class="nav_container hidden_phone">
+    			<div class="nav_container">
     				<div class="site_logo">
     					<router-link to="/"><img :src="property_logo" alt="Property Logo"/></router-link>
     				</div>
