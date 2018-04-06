@@ -56,6 +56,11 @@
                 <div class="padding_top_40"></div>
             </div>
         </div >
+        <div style="height: 300px;">
+		    <iframe class="grayscale" title="Map" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="http://maps.google.nl/maps?q=216 Chrislea RoadVaughanCanadaONON&hl=en&ie=UTF8&t=v&hnear=216 Chrislea RoadVaughanCanadaONON&z=16&output=embed">
+				Map
+			</iframe>
+		</div>
     </div>
 </template>
 <style>
