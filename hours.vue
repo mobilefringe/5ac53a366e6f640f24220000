@@ -78,7 +78,7 @@
                     if(temp_repo) {
                         // this.pageBanner = temp_repo.images[0];
                         this.pageBanner = {};
-                        this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1523030162566/contact_us_inside_banner.png"
+                        this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1523030133826/hours_inside_banner.png"
                     }
                 });
                 
