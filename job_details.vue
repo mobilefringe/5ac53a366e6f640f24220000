@@ -54,7 +54,7 @@
                     currentJob: null,
                     storeJobs : null,
                     storeHours : null,
-                    jobBanner : null
+                    pageBanner : null
                 }
             },
             props:['id', 'locale'],
@@ -70,7 +70,7 @@
                     this.updateCurrentJob(this.id);
                     var temp_repo = this.findRepoByName('Jobs Banner');
                     if(temp_repo) {
-                        // this.jobBanner = temp_repo.images[0];
+                        // this.pageBanner = temp_repo.images[0];
                         this.pageBanner = {};
                         this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1523030074878/jobs_inside_banner.png"
                     }
