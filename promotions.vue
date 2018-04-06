@@ -12,7 +12,7 @@
 			<div id="events_container" v-if="promotions.length > 0">
 				<paginate name="promos" v-if="promos" :list="promos" class="paginate-list margin-60" :per="6">
 					<div class="col-sm-4 event_container" v-for="(promo,index) in paginated('promos')" :class="{ 'last': index === (paginated('promos').length - 1) }"  :key="promo.id">
-					    <router-link :to="'/promotions/'+ promo.slug" class="event_learn_more pull-left">
+					    <router-link :to="'/promotions/'+ promo.slug" class="event_link">
     						<div class="row event_image_container">
     							<router-link :to="'/promotions/'+ promo.slug" class="event_learn_more">
     								<img v-lazy="promo.store.store_front_url_abs"  class="event_image image" alt=""/>
