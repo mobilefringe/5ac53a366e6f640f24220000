@@ -26,8 +26,7 @@
     							<h4 class="event_name caps" v-if="locale=='en-ca'">{{promo.name}}</h4>
     							<h4 class="event_name caps" v-else>{{promo.name_2}}</h4>
     							
-    							<p class="event_dates">{{promo.start_date | moment("MMM D", timezone)}} - {{promo.end_date | moment("MMM D", timezone)}}</p>
-    						
+    							<p class="event_dates">{{promo.start_date | moment("MMMM D", timezone)}} - {{promo.end_date | moment("MMMM D", timezone)}}</p>
     						</div>
 						</router-link>
 					</div>
