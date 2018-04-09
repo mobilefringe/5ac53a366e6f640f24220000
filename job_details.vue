@@ -113,7 +113,7 @@
                             }
                             storeHours.push();
                         });
-                        this.storeHours = _.sortBy(storeHours, [function(o) { return o.order; }]);;
+                        this.storeHours = _.sortBy(storeHours, [function(o) { return o.order; }]);
                     }
                 }
             },
