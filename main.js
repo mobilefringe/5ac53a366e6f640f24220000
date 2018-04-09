@@ -180,7 +180,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
 
             },
             checkWindowWidth(e){
-                console.log(window.offsetWidth());
+                console.log(window.offsetWidth;
             }
         },
         destroyed: function() {
