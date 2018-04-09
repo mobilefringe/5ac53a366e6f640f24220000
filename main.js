@@ -93,6 +93,7 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                 this.locale = "en-ca";
             });
             window.addEventListener('scroll', this.enableStickyNavbar);
+            window.addEventListener('resize', this.enableStickyNavbar);
         },
         watch: {
             // watcher to update vue-i18n when the locale has been changed by the user
