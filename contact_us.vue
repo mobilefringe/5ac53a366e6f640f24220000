@@ -16,7 +16,7 @@
                     <div class="text-left" v-html="currentPage.body"></div>
                 </div> 
                 <div class="col-sm-6 contact_contents">
-                    <div class="description_text text-center caps">
+                    <div class="description_text text-center caps contact_us_dets">
                         CONTACT US FOR QUESTIONS, COMMENTS AND MORE INFORMATION.
                     </div>
                     <form class="form-horizontal padding_top_20" action="form-submit" @submit.prevent="validateBeforeSubmit">
@@ -60,7 +60,7 @@
             </div>
             <div class="padding_top_40"></div>
         </div>
-        <div style="height: 300px;margin-bottom:-30px" class="show_phone">
+        <div style="height: 300px;margin-bottom:-30px;" class="show_phone">
     	    <iframe class="grayscale" title="Map" width="100%" height="300" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"  src="http://maps.google.nl/maps?q=216 Chrislea RoadVaughanCanadaONON&hl=en&ie=UTF8&t=v&hnear=216 Chrislea RoadVaughanCanadaONON&z=16&output=embed">
     			Map
     		</iframe>
