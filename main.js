@@ -178,6 +178,9 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'datastore', 'vu
                     this.stickyMenu = false;
                 }
 
+            },
+            checkWindowWidth(e){
+                
             }
         },
         destroyed: function() {
