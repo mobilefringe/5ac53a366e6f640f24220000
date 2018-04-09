@@ -41,7 +41,6 @@
 						<!--</ul>-->
 					</div>
 				</div>
-				<hr class="green_hr visible_phone">
 				<div class="col-sm-8 text-left">
 					<h4 v-if="currentStore.rich_description" class="store_dets_title caps about_us_btn"> {{$t("stores_page.about_us")}}</h4>
 					<div class="text-left promo_description">
