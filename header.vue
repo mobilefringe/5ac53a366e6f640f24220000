@@ -1,6 +1,6 @@
 <template>
     <div class="sticky">
-    	<div class="menu_bar">
+    	<div class="menu_bar" :class="{ black_bg: show_mobile_menu}">
     		<div class="site_container">
     			<div class="nav_container">
     				<div class="site_logo">
