@@ -136,6 +136,7 @@
             },
             computed: {
                 ...Vuex.mapGetters([
+                    'property',
                     'timezone',
                     'processedEvents',
                     'findRepoByName',
