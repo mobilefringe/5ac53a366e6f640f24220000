@@ -88,9 +88,9 @@
                     this.currentPage = response[0].data;
                     var temp_repo = this.findRepoByName('Contact Us Banner');
                     if(temp_repo) {
-                        // this.pageBanner = temp_repo.images[0];
-                        this.pageBanner = {};
-                        this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1523030162566/contact_us_inside_banner.png"
+                        this.pageBanner = temp_repo.images[0];
+                        // this.pageBanner = {};
+                        // this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1523030162566/contact_us_inside_banner.png"
                     }
                 });
             },
