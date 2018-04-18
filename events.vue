@@ -155,7 +155,7 @@
                                 'length': 150
                             });
                             if (value.store != null && value.store != undefined && _.includes(value.store.store_front_url_abs, 'missing')) {
-                                value.store.store_front_url_abs = "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1518554684072/bonniedoonlogo.png";
+                                value.store.store_front_url_abs = vm.property.default_logo;
                             }
                             else if (value.store == null || value.store == undefined) {
                                 value.store = {};
