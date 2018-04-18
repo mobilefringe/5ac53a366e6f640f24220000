@@ -159,7 +159,7 @@
                             }
                             else if (value.store == null || value.store == undefined) {
                                 value.store = {};
-                                value.store.store_front_url_abs =  this.property.default_logo;
+                                value.store.store_front_url_abs =  vm.property.default_logo;
                             }
                             // if (_.includes(value.image_url, 'missing')) {
                             //     value.image_url = "http://via.placeholder.com/400x400/757575";
