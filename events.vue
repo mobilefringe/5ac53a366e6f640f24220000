@@ -128,7 +128,7 @@
                     
                     var temp_repo = this.findRepoByName('Events Banner');
                     if(temp_repo) {
-                        // this.pageBanner = temp_repo.images[0];
+                        this.pageBanner = temp_repo.images[0];
                         // this.pageBanner = {};
                         // this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1523030051721/promos_inside_banner.png"
                     }
@@ -159,7 +159,7 @@
                             }
                             else if (value.store == null || value.store == undefined) {
                                 value.store = {};
-                                value.store.store_front_url_abs =  "//codecloud.cdn.speedyrails.net/sites/5a6a54eb6e6f647da51e0100/image/png/1518554684072/bonniedoonlogo.png";
+                                value.store.store_front_url_abs =  this.property.default_logo;
                             }
                             if (_.includes(value.image_url, 'missing')) {
                                 value.image_url = "http://via.placeholder.com/400x400/757575";
