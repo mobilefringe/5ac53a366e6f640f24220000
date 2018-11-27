@@ -138,6 +138,7 @@
                 loadData: async function() {
                     try {
                         // avoid making LOAD_META_DATA call for now as it will cause the entire Promise.all to fail since no meta data is set up.
+                        this.property.mm_host = this.property.mm_host.replace("http:", "");
                         let results = await Promise.all([this.$store.dispatch('LOAD_PAGE_DATA', {url: this.property.mm_host + "	/pages/umber-contact-us.json"}),this.$store.dispatch("getData", "repos")]);
                         return results;
                     } catch (e) {
