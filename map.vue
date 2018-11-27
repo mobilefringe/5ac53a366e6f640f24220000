@@ -67,7 +67,7 @@
                     // this.storeBanner = this.findRepoByName('Stores Banner').images[0];
                     var temp_repo = this.findRepoByName('Map Banner');
                     if(temp_repo) {
-                        // this.pageBanner = temp_repo.images[0];
+                        this.pageBanner = temp_repo.images[0];
                         // this.pageBanner = {};
                         // this.pageBanner.image_url = "//codecloud.cdn.speedyrails.net/sites/5ac53a366e6f640f24220000/image/png/1523030098919/map_inside_banner.png"
                     }
@@ -105,7 +105,6 @@
 
                 ]),
                 allStores() {
-                    console.log(this.processedStores);
                     return this.processedStores;
                 },
                 allCatergories() {
