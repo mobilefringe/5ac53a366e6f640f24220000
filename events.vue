@@ -47,63 +47,7 @@
 </template>
 
 <style>
-    .events_container .date_bar{
-        /* Today: */
-        background: #D3D3D3;
-        height: 40px;
-        line-height: 40px;
-        margin: auto;
-        text-align: center;
-    }
-    .events_container .date_bar .fa{
-        cursor: pointer;
-    }
-    .events_container .current_date{
-        color: #636363;
-        padding: 0 10px;
-    }
-    .events_container .all_dates {
-        border-bottom: 1px solid #aea99e;
-    }
-    .events_container .all_dates span {
-        font-size: 16px;
-        color: #000000;
-        letter-spacing: 1.5px;
-        height: 30px;
-        line-height: 30px;
-        padding: 0 5px;
-        cursor: pointer;
-    }
-    .events_container .all_dates [class*="date_"]:focus, [class*="date_"]:hover { 
-        background-color: #D3D3D3;
-    }
-    .events_container .all_dates span.active { 
-        background-color: #bababa;
-    }
-    .events_container .promo_dets {
-        border-bottom: 1px solid #aea99e;
-    }
-    .events_container .row.is-table-row {
-        margin: 0;
-    }
-    .events_container .row.is-table-row [class*="col-"] {
-        padding:0;
-    }
-    .events_container .feature_read_more {
-        width : auto;
-    }
-    .events_container .social_share network {
-        display:inline-block;
-        width: 24px;
-        height: 24px;
-        cursor: pointer;
-    }
-    .events_container .social_share .social_icons{
-        width : 24px;
-        height : 24px;
-        display:inline;
-        margin: 0 2px;
-    }
+    
     
 </style>
 
